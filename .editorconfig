@@ -1,0 +1,47 @@
+# top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Java source files
+[*.java]
+# Based on common Google/Sun/IntelliJ Java style
+indent_style = space
+indent_size = 4
+max_line_length = 120
+tab_width = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Ensure imports are ordered: static imports first, then java.*, javax.*, then others
+ij_java_imports_layout = *,javax.**,java.**,org.**,com.**
+
+# Space settings
+ij_java_space_before_if_parentheses = true
+ij_java_space_before_for_parentheses = true
+ij_java_space_before_while_parentheses = true
+ij_java_space_before_try_parentheses = true
+ij_java_space_before_catch_parentheses = true
+ij_java_space_before_switch_parentheses = true
+ij_java_space_before_synchronized_parentheses = true
+
+# Align method parameters and chained method calls
+ij_java_align_multiline_parameters = true
+ij_java_align_multiline_chained_methods = true
+
+# Enable wildcard imports only if more than 99 classes from a package are used
+ij_java_class_count_to_use_import_on_demand = 99
+
+# Comments: wrap at max_line_length
+ij_java_wrap_comments = true
+
+# XML, YAML, Gradle, etc.
+[*.{xml,yml,yaml,gradle}]
+indent_size = 4

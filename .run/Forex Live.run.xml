@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Forex Live" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+        <option name="SPRING_BOOT_MAIN_CLASS" value="com.mar.forex.application.Application"/>
+        <option name="PROGRAM_PARAMETERS" value="live --instrument EUR_USD --granularity M5"/>
+        <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true"/>
+        <option name="ALTERNATIVE_JRE_PATH" value="17"/>
+        <module name="forex-ml-java.main"/>
+        <method v="2">
+            <option name="Make" enabled="true"/>
+        </method>
+    </configuration>
+</component>

@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Forex Backtest" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ALTERNATIVE_JRE_PATH" value="17" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <module name="forex-trader.main" />
+    <option name="PROGRAM_PARAMETERS" value="backtest --instrument EUR_USD --granularity M5 --years 1" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.mar.forex.application.Application" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

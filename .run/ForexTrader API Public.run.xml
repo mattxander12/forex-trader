@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ForexTrader API Public" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ALTERNATIVE_JRE_PATH" value="17" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <envs>
+      <env name="OANDA_ACCOUNT_ID" value="" />
+      <env name="OANDA_API_KEY" value="" />
+    </envs>
+    <option name="HIDE_BANNER" value="true" />
+    <option name="MAIN_CLASS_NAME" value="com.mar.forex.application.Application" />
+    <module name="forex-trader.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.mar.forex.application.Application" />
+    <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

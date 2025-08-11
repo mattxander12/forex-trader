@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.3.1'
+    id 'io.spring.dependency-management' version '1.1.5'
+    id 'io.freefair.lombok' version '8.6'
+}
+
+group = 'com.mar'
+version = '0.1.0'
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    tribuoVersion = '4.3.1'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+
+    implementation "org.tribuo:tribuo-core:${tribuoVersion}"
+    implementation "org.tribuo:tribuo-data:${tribuoVersion}"
+    implementation "org.tribuo:tribuo-classification-core:${tribuoVersion}"
+    implementation "org.tribuo:tribuo-classification-sgd:${tribuoVersion}"
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
